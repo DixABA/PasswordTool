@@ -27,7 +27,6 @@ package passwordtool;
 
 import dixaba.crypty;
 import java.awt.Toolkit;
-import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 
 /**
@@ -65,6 +64,7 @@ public class PTool extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jButton1.setText("Го!");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +201,7 @@ public class PTool extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Motif".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
